@@ -11,5 +11,11 @@ public class BaseController {
 		
 		return "home";
 	}
+	
+	@RequestMapping("/list")
+	public String list() {
+		
+		return "list";
+	}
 
 }
