@@ -1,15 +1,15 @@
 var app = angular.module('crudApp',['ui.router','ngStorage']);
 
 app.constant('urls', {
-    BASE: 'http://localhost:8080/SpringBootCRUDApp',
-    USER_SERVICE_API : 'http://localhost:8080/SpringBootCRUDApp/api/user/'
+    BASE: 'http://localhost:8080/',
+    USER_SERVICE_API : 'http://localhost:8080/api/'
 });
 
 app.config(['$stateProvider', '$urlRouterProvider',
     function($stateProvider, $urlRouterProvider) {
 
         $stateProvider
-            .state('home', {
+            .state('home', {	
                 url: '/',
                 templateUrl: 'list',
                 controller:'UserController',
@@ -22,6 +22,12 @@ app.config(['$stateProvider', '$urlRouterProvider',
                         return deferred.promise;
                     }
                 }
+            })
+             .state('view', {	
+                url: '/view',
+                templateUrl: 'view',
+               
+              
             });
         $urlRouterProvider.otherwise('/');
     }]);
