@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-<div>
-list1
-=======
 <div class="generic-container">
     <div class="panel panel-default">
         <!-- Default panel contents -->
@@ -20,7 +16,7 @@ list1
 	                        </div>
 	                    </div>
 	                </div>
->>>>>>> refs/remotes/origin/master
+
 
 	                <div class="row">
 	                    <div class="form-group col-md-12">
@@ -81,4 +77,4 @@ list1
 			</div>
 		</div>
     </div>
-</div></div>
+</div>
