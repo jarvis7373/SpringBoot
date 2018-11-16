@@ -19,7 +19,7 @@ public class BaseController {
 	
 	@RequestMapping( value = "/list" , method = RequestMethod.GET)
 	public String list() {
-		
+		System.out.println("test");
 		return "list";
 	}
 	
